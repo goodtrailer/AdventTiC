@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "aoa3:sharp_claw"
+    }
+  ],
+  "tools": {
+    "tag": "adventtic:modifiable/melee/sweep"
+  },
+  "slots": {
+    "upgrades": 1
+  },
+  "result": {
+    "name": "adventtic:air_blade",
+    "level": 1
+  },
+  "max_level": 3
+}

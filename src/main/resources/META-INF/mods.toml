@@ -1,0 +1,49 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+
+[[mods]]
+modId="adventtic"
+version="${file.jarVersion}"
+displayName="AdventTiC"
+credits="Thanks to Tslat for Advent of Ascension and the Slime Knights for Tinkers Construct/Mantle!"
+authors="goodtrailer"
+description='''
+Advent of Ascension integration with Tinkers Construct, based on the
+official integration from the 1.12.2 version of the mods.
+'''
+
+[[dependencies.adventtic]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.adventtic]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.adventtic]]
+    modId="aoa3"
+    mandatory=true
+    versionRange="[3.5.4,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.adventtic]]
+    modId="mantle"
+    mandatory=true
+    versionRange="[1.6.127,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.adventtic]]
+    modId="tconstruct"
+    mandatory=true
+    versionRange="[3.2.1.296,)"
+    ordering="NONE"
+    side="BOTH"

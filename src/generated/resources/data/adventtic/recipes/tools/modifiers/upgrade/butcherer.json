@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "aoa3:bloodstone",
+      "amount_needed": 3
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  },
+  "slots": {
+    "upgrades": 1
+  },
+  "result": {
+    "name": "adventtic:butcherer",
+    "level": 1
+  },
+  "max_level": 3
+}

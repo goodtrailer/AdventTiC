@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "aoa3:gold_coin"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  },
+  "slots": {
+    "abilities": 1
+  },
+  "result": {
+    "name": "adventtic:moneybags",
+    "level": 1
+  },
+  "max_level": 3
+}

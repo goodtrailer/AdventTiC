@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tconstruct:kama",
+    "tconstruct:scythe",
+    "tconstruct:sword",
+    "tconstruct:cleaver"
+  ]
+}

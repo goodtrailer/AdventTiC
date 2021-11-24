@@ -1,0 +1,20 @@
+{
+  "modifier.adventtic.air_blade": "Air Blade",
+  "modifier.adventtic.air_blade.description": "Increases the damage dealt by sweep attacks",
+  "modifier.adventtic.air_blade.flavor": "Splitting the air itself!",
+  "modifier.adventtic.butcherer": "Butcherer",
+  "modifier.adventtic.butcherer.description": "Increases the chance of bloodlusts spawning when attacking",
+  "modifier.adventtic.butcherer.flavor": "Satisfying the bloodlust...",
+  "modifier.adventtic.creepified": "Creepified",
+  "modifier.adventtic.creepified.description": "Creates explosions when attacking mobs",
+  "modifier.adventtic.creepified.flavor": "Harness the power of fast air!",
+  "modifier.adventtic.moneybags": "Moneybags",
+  "modifier.adventtic.moneybags.description": "Mobs to explode into coins when killed",
+  "modifier.adventtic.moneybags.flavor": "Explosive pickpocketing!",
+  "modifier.adventtic.refreezing": "Refreezing",
+  "modifier.adventtic.refreezing.description": "Regenerates tool damage when in cold environments",
+  "modifier.adventtic.refreezing.flavor": "Everlasting ice crystals~",
+  "modifier.adventtic.surprise_me": "Surprise Me",
+  "modifier.adventtic.surprise_me.description": "Increases average tool damage, but makes tool damage random",
+  "modifier.adventtic.surprise_me.flavor": "Installing unreliability module..."
+}
