@@ -1,0 +1,12 @@
+{
+  "default": [
+    {
+      "name": "adventtic:laced",
+      "level": 1
+    },
+    {
+      "name": "adventtic:toxic",
+      "level": 1
+    }
+  ]
+}

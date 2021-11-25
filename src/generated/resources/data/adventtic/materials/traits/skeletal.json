@@ -1,0 +1,12 @@
+{
+  "default": [
+    {
+      "name": "adventtic:bone_shock",
+      "level": 1
+    },
+    {
+      "name": "adventtic:high_in_calcium",
+      "level": 1
+    }
+  ]
+}

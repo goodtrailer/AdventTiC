@@ -1,0 +1,12 @@
+{
+  "default": [
+    {
+      "name": "adventtic:flaming_fury",
+      "level": 1
+    },
+    {
+      "name": "adventtic:infernal_energy",
+      "level": 1
+    }
+  ]
+}

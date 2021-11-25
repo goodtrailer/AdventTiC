@@ -12,6 +12,7 @@ import slimeknights.tconstruct.tools.TinkerTools;
 
 public class AdventTiCItemTagsProvider extends ItemTagsProvider
 {
+    public static final String NAME = "AdventTiC Item Tags";
 
     public AdventTiCItemTagsProvider(DataGenerator gen, BlockTagsProvider blockTagsProvider,
             ExistingFileHelper existingFileHelper)
@@ -19,6 +20,12 @@ public class AdventTiCItemTagsProvider extends ItemTagsProvider
         super(gen, blockTagsProvider, AdventTiC.MOD_ID, existingFileHelper);
     }
 
+    @Override
+    public String getName()
+    {
+        return NAME;
+    }
+    
     @Override
     protected void addTags()
     {

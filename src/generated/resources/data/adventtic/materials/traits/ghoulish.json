@@ -1,0 +1,12 @@
+{
+  "default": [
+    {
+      "name": "adventtic:soul_harvest",
+      "level": 1
+    },
+    {
+      "name": "adventtic:soul_sap",
+      "level": 1
+    }
+  ]
+}
