@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "aoa3:cannonball"
+  },
+  "result": {
+    "fluid": "adventtic:molten_limonite",
+    "amount": 48
+  },
+  "temperature": 50,
+  "time": 18
+}

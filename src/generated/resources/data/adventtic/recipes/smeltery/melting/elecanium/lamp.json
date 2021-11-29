@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "aoa3:elecanium_lamp"
+  },
+  "result": {
+    "fluid": "adventtic:molten_elecanium",
+    "amount": 144
+  },
+  "temperature": 370,
+  "time": 45
+}

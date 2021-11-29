@@ -1,11 +1,15 @@
 package goodtrailer.adventtic.lang;
 
 import goodtrailer.adventtic.AdventTiC;
+import goodtrailer.adventtic.fluids.AdventTiCFluids;
 import goodtrailer.adventtic.materials.AdventTiCMaterials;
 import goodtrailer.adventtic.modifiers.AdventTiCModifiers;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.item.Item;
 import net.minecraftforge.common.data.LanguageProvider;
+import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.fml.RegistryObject;
+import slimeknights.mantle.registration.object.FluidObject;
 import slimeknights.tconstruct.library.materials.definition.MaterialId;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 
@@ -13,12 +17,12 @@ public class AdventTiCEnglishProvider extends LanguageProvider
 {
     public static final String NAME = "AdventTiC English";
     public static final String LOCALE = "en_us";
-    
+
     public AdventTiCEnglishProvider(DataGenerator gen)
     {
         super(gen, AdventTiC.MOD_ID, LOCALE);
     }
-    
+
     @Override
     public String getName()
     {
@@ -28,10 +32,30 @@ public class AdventTiCEnglishProvider extends LanguageProvider
     @Override
     protected void addTranslations()
     {
+        addFluids();
         addMaterials();
         addModifiers();
     }
-    
+
+    private void addFluids()
+    {
+        addFluid(AdventTiCFluids.MOLTEN_BARONYTE, "Molten Baronyte");
+        addFluid(AdventTiCFluids.MOLTEN_BLAZIUM, "Molten Blazium");
+        addFluid(AdventTiCFluids.MOLTEN_CHARGER, "Molten Charger");
+        addFluid(AdventTiCFluids.MOLTEN_ELECANIUM, "Molten Elecanium");
+        addFluid(AdventTiCFluids.MOLTEN_EMBERSTONE, "Molten Emberstone");
+        addFluid(AdventTiCFluids.MOLTEN_GHASTLY, "Molten Ghastly");
+        addFluid(AdventTiCFluids.MOLTEN_GHOULISH, "Molten Ghoulish");
+        addFluid(AdventTiCFluids.MOLTEN_LIMONITE, "Molten Limonite");
+        addFluid(AdventTiCFluids.MOLTEN_LUNAR, "Molten Lunar");
+        addFluid(AdventTiCFluids.MOLTEN_LYON, "Molten Lyon");
+        addFluid(AdventTiCFluids.MOLTEN_MYSTITE, "Molten Mystite");
+        addFluid(AdventTiCFluids.MOLTEN_ROSITE, "Molten Rosite");
+        addFluid(AdventTiCFluids.MOLTEN_SHYRESTONE, "Molten Shyrestone");
+        addFluid(AdventTiCFluids.MOLTEN_SKELETAL, "Molten Skeletal");
+        addFluid(AdventTiCFluids.MOLTEN_VARSIUM, "Molten Varsium");
+    }
+
     private void addMaterials()
     {
         // General Materials
@@ -43,12 +67,12 @@ public class AdventTiCEnglishProvider extends LanguageProvider
         addMaterial(AdventTiCMaterials.ROSITE, "Rosite");
         addMaterial(AdventTiCMaterials.SHYRESTONE, "Shyrestone");
         addMaterial(AdventTiCMaterials.SKELETAL, "Skeletal");
-        
+
         addMaterial(AdventTiCMaterials.CHARGER, "Charger");
-        
+
         // Harvest Materials
         addMaterial(AdventTiCMaterials.LUNAR, "Lunar");
-        
+
         // Weapon Materials
         addMaterial(AdventTiCMaterials.BARONYTE, "Baronyte");
         addMaterial(AdventTiCMaterials.ELECANIUM, "Elecanium");
@@ -56,7 +80,7 @@ public class AdventTiCEnglishProvider extends LanguageProvider
         addMaterial(AdventTiCMaterials.MYSTITE, "Mystite");
         addMaterial(AdventTiCMaterials.VARSIUM, "Varsium");
     }
-    
+
     private void addModifiers()
     {
         // Abilities
@@ -68,7 +92,7 @@ public class AdventTiCEnglishProvider extends LanguageProvider
                 "Moneybags",
                 "Explosive pickpocketing!",
                 "Mobs to explode into coins when killed");
-        
+
         // Traits
         addModifier(AdventTiCModifiers.ANTI_AIR,
                 "Anti-Air",
@@ -138,7 +162,7 @@ public class AdventTiCEnglishProvider extends LanguageProvider
                 "Tweeting",
                 "Tweet, tweet!",
                 "Ever wanted to sound like a charger?");
-        
+
         // Upgrades
         addModifier(AdventTiCModifiers.AIR_BLADE,
                 "Air Blade",
@@ -157,14 +181,31 @@ public class AdventTiCEnglishProvider extends LanguageProvider
                 "Installing unreliability module...",
                 "Increases average tool damage, but makes tool damage random");
     }
-    
+
+    private void addFluid(FluidObject<ForgeFlowingFluid> fluid, String name)
+    {
+        String id = fluid.getId().getPath();
+        String prefix = "fluid." + AdventTiC.MOD_ID + ".";
+        addBlock(() -> fluid.getBlock(), name);
+        add(prefix + id, name);
+
+        addItem(fluid.get().getBucket(), name + " Bucket");
+    }
+
+    private void addItem(Item item, String name)
+    {
+        String id = item.getRegistryName().getPath();
+        String prefix = "item." + AdventTiC.MOD_ID + ".";
+        add(prefix + id, name);
+    }
+
     private void addMaterial(MaterialId materialId, String name)
     {
         String id = materialId.getPath();
         String prefix = "material." + AdventTiC.MOD_ID + ".";
         add(prefix + id, name);
     }
-    
+
     private void addModifier(RegistryObject<Modifier> modifier, String name, String flavor,
             String description)
     {

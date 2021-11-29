@@ -1,0 +1,17 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {
+      "item": "aoa3:emberstone_axe"
+    },
+    {
+      "item": "aoa3:emberstone_pickaxe"
+    }
+  ],
+  "result": {
+    "fluid": "adventtic:molten_emberstone",
+    "amount": 432
+  },
+  "temperature": 500,
+  "time": 86
+}

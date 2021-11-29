@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:ore_melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:ores/lyon",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ores/lyon"
+  },
+  "result": {
+    "fluid": "adventtic:molten_lyon",
+    "amount": 144
+  },
+  "temperature": 220,
+  "time": 58
+}

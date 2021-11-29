@@ -1,0 +1,17 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {
+      "item": "aoa3:rosite_axe"
+    },
+    {
+      "item": "aoa3:rosite_pickaxe"
+    }
+  ],
+  "result": {
+    "fluid": "adventtic:molten_rosite",
+    "amount": 432
+  },
+  "temperature": 100,
+  "time": 58
+}

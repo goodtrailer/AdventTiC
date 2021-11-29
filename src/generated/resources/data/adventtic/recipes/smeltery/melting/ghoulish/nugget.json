@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:nuggets/ghoulish",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/ghoulish"
+  },
+  "result": {
+    "fluid": "adventtic:molten_ghoulish",
+    "amount": 16
+  },
+  "temperature": 80,
+  "time": 11
+}

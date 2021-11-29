@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "aoa3:lyon_lamp"
+  },
+  "result": {
+    "fluid": "adventtic:molten_lyon",
+    "amount": 144
+  },
+  "temperature": 220,
+  "time": 39
+}

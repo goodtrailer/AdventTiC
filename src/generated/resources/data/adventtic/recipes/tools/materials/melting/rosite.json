@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "adventtic:rosite",
+  "temperature": 100,
+  "result": {
+    "fluid": "adventtic:molten_rosite",
+    "amount": 144
+  }
+}

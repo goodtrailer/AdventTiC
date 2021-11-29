@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:plates/shyrestone",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:plates/shyrestone"
+  },
+  "result": {
+    "fluid": "adventtic:molten_shyrestone",
+    "amount": 144
+  },
+  "temperature": 60,
+  "time": 31
+}

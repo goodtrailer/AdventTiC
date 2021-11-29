@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/lyon",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/lyon"
+  },
+  "value": 9,
+  "needed": 1,
+  "material": "adventtic:lyon",
+  "leftover": {
+    "tag": "forge:ingots/lyon"
+  }
+}

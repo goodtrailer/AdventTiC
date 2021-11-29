@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "aoa3:emberstone_sword"
+  },
+  "result": {
+    "fluid": "adventtic:molten_emberstone",
+    "amount": 288
+  },
+  "temperature": 500,
+  "time": 71
+}

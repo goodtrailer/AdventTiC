@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:entity_melting",
+  "entity": {
+    "types": [
+      "aoa3:king_charger"
+    ]
+  },
+  "result": {
+    "fluid": "adventtic:molten_charger",
+    "amount": 16
+  },
+  "damage": 2
+}

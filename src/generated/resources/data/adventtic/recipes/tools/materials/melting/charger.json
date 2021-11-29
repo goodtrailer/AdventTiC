@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "adventtic:charger",
+  "temperature": 40,
+  "result": {
+    "fluid": "adventtic:molten_charger",
+    "amount": 144
+  }
+}

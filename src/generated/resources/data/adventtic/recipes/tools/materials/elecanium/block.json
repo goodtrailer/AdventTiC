@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/elecanium",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/elecanium"
+  },
+  "value": 9,
+  "needed": 1,
+  "material": "adventtic:elecanium",
+  "leftover": {
+    "tag": "forge:ingots/elecanium"
+  }
+}

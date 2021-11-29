@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "adventtic:lunar",
+  "temperature": 205,
+  "result": {
+    "fluid": "adventtic:molten_lunar",
+    "amount": 144
+  }
+}

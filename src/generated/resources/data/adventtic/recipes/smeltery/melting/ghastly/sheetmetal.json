@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:sheetmetals/ghastly",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:sheetmetals/ghastly"
+  },
+  "result": {
+    "fluid": "adventtic:molten_ghastly",
+    "amount": 144
+  },
+  "temperature": 90,
+  "time": 33
+}

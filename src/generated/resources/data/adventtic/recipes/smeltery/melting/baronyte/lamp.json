@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "aoa3:baronyte_lamp"
+  },
+  "result": {
+    "fluid": "adventtic:molten_baronyte",
+    "amount": 144
+  },
+  "temperature": 280,
+  "time": 41
+}

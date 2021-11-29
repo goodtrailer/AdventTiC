@@ -3,11 +3,12 @@ package goodtrailer.adventtic.materials;
 import net.minecraft.data.DataGenerator;
 import slimeknights.tconstruct.library.client.data.material.AbstractMaterialRenderInfoProvider;
 import slimeknights.tconstruct.library.client.data.material.AbstractMaterialSpriteProvider;
+import slimeknights.tconstruct.library.materials.definition.MaterialId;
 
 public class AdventTiCMaterialRenderInfoProvider extends AbstractMaterialRenderInfoProvider
 {
     public static final String NAME = "AdventTiC Material Render Info";
-    
+
     public AdventTiCMaterialRenderInfoProvider(DataGenerator gen,
             AbstractMaterialSpriteProvider spriteProvider)
     {
@@ -23,36 +24,11 @@ public class AdventTiCMaterialRenderInfoProvider extends AbstractMaterialRenderI
     @Override
     protected void addMaterialRenderInfo()
     {
-        addGeneralMaterials();
-        addHarvestMaterials();
-        addWeaponMaterials();
-    }
-    
-    private void addGeneralMaterials()
-    {
-        buildRenderInfo(AdventTiCMaterials.BLAZIUM);
-        buildRenderInfo(AdventTiCMaterials.EMBERSTONE);
-        buildRenderInfo(AdventTiCMaterials.GHOULISH);
-        buildRenderInfo(AdventTiCMaterials.LIMONITE);
-        buildRenderInfo(AdventTiCMaterials.LYON);
-        buildRenderInfo(AdventTiCMaterials.ROSITE);
-        buildRenderInfo(AdventTiCMaterials.SHYRESTONE);
-        buildRenderInfo(AdventTiCMaterials.SKELETAL);
-    
-        buildRenderInfo(AdventTiCMaterials.CHARGER);
-    }
-    
-    private void addHarvestMaterials()
-    {
-        buildRenderInfo(AdventTiCMaterials.LUNAR);
-    }
-    
-    private void addWeaponMaterials()
-    {
-        buildRenderInfo(AdventTiCMaterials.BARONYTE);
-        buildRenderInfo(AdventTiCMaterials.ELECANIUM);
-        buildRenderInfo(AdventTiCMaterials.GHASTLY);
-        buildRenderInfo(AdventTiCMaterials.MYSTITE);
-        buildRenderInfo(AdventTiCMaterials.VARSIUM);
+        for (MaterialId general : AdventTiCMaterials.GENERAL)
+            buildRenderInfo(general);
+        for (MaterialId harvest : AdventTiCMaterials.HARVEST)
+            buildRenderInfo(harvest);
+        for (MaterialId weapon : AdventTiCMaterials.WEAPON)
+            buildRenderInfo(weapon);
     }
 }

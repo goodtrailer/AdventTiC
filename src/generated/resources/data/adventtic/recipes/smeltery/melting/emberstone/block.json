@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/emberstone",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/emberstone"
+  },
+  "result": {
+    "fluid": "adventtic:molten_emberstone",
+    "amount": 1296
+  },
+  "temperature": 500,
+  "time": 150
+}

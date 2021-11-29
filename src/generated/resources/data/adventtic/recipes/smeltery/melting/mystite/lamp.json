@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "aoa3:mystic_lamp"
+  },
+  "result": {
+    "fluid": "adventtic:molten_mystite",
+    "amount": 144
+  },
+  "temperature": 130,
+  "time": 35
+}

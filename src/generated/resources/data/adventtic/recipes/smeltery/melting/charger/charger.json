@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:entity_melting",
+  "entity": {
+    "types": [
+      "aoa3:charger",
+      "aoa3:desert_charger",
+      "aoa3:hill_charger",
+      "aoa3:sea_charger",
+      "aoa3:snow_charger",
+      "aoa3:swamp_charger",
+      "aoa3:void_charger"
+    ]
+  },
+  "result": {
+    "fluid": "adventtic:molten_charger",
+    "amount": 6
+  },
+  "damage": 2
+}

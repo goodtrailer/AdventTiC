@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "aoa3:rosite_sword"
+  },
+  "result": {
+    "fluid": "adventtic:molten_rosite",
+    "amount": 288
+  },
+  "temperature": 100,
+  "time": 47
+}

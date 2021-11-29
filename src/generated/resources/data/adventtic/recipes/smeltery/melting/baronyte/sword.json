@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "aoa3:baron_sword"
+  },
+  "result": {
+    "fluid": "adventtic:molten_baronyte",
+    "amount": 288
+  },
+  "temperature": 280,
+  "time": 58
+}

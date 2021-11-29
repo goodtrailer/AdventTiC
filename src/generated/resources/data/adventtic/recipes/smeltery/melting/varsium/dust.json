@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:dusts/varsium",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:dusts/varsium"
+  },
+  "result": {
+    "fluid": "adventtic:molten_varsium",
+    "amount": 144
+  },
+  "temperature": 150,
+  "time": 27
+}

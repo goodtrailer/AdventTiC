@@ -16,7 +16,7 @@ public class RefreezingModifier extends Modifier
     public static final float MAX_TEMP = 0.15f;
     public static final float PROB_PER_LEVEL = 1 / 36f;
     public static final float SELECTED_COEFFICIENT = 2f;
-    
+
     private Random rng;
 
     public RefreezingModifier()

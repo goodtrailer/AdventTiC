@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "tag": "forge:molten_varsium",
+    "amount": 144
+  },
+  "temperature": 150,
+  "output": "adventtic:varsium"
+}

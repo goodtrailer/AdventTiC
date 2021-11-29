@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/limonite",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/limonite"
+  },
+  "value": 9,
+  "needed": 1,
+  "material": "adventtic:limonite",
+  "leftover": {
+    "tag": "forge:ingots/limonite"
+  }
+}

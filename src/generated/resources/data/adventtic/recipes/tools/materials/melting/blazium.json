@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "adventtic:blazium",
+  "temperature": 480,
+  "result": {
+    "fluid": "adventtic:molten_blazium",
+    "amount": 144
+  }
+}

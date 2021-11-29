@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "adventtic:elecanium",
+  "temperature": 370,
+  "result": {
+    "fluid": "adventtic:molten_elecanium",
+    "amount": 144
+  }
+}

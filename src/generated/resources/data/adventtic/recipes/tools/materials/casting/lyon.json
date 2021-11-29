@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "tag": "forge:molten_lyon",
+    "amount": 144
+  },
+  "temperature": 220,
+  "output": "adventtic:lyon"
+}

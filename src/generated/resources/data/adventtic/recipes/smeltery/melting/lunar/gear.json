@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:gears/lunar",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:gears/lunar"
+  },
+  "result": {
+    "fluid": "adventtic:molten_lunar",
+    "amount": 576
+  },
+  "temperature": 205,
+  "time": 76
+}

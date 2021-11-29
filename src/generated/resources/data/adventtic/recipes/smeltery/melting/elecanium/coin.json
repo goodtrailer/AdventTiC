@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:coins/elecanium",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:coins/elecanium"
+  },
+  "result": {
+    "fluid": "adventtic:molten_elecanium",
+    "amount": 48
+  },
+  "temperature": 370,
+  "time": 30
+}

@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/mystite",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/mystite"
+  },
+  "result": {
+    "fluid": "adventtic:molten_mystite",
+    "amount": 1296
+  },
+  "temperature": 130,
+  "time": 104
+}

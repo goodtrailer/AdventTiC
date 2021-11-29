@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "aoa3:ghastly_lamp"
+  },
+  "result": {
+    "fluid": "adventtic:molten_ghastly",
+    "amount": 144
+  },
+  "temperature": 90,
+  "time": 33
+}

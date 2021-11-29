@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/skeletal",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/skeletal"
+  },
+  "result": {
+    "fluid": "adventtic:molten_skeletal",
+    "amount": 1296
+  },
+  "temperature": 60,
+  "time": 94
+}

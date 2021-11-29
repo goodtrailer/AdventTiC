@@ -15,7 +15,7 @@ public class CreepifiedModifier extends Modifier
     public static final int COLOR = 0xA4EA00;
     public static final float CRIT_COEFFICIENT = 1.1f;
     public static final double MARGIN = 0.1;
-    
+
     public CreepifiedModifier()
     {
         super(COLOR);

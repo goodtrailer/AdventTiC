@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/skeletal",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/skeletal"
+  },
+  "value": 9,
+  "needed": 1,
+  "material": "adventtic:skeletal",
+  "leftover": {
+    "tag": "forge:ingots/skeletal"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:nuggets/blazium",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/blazium"
+  },
+  "result": {
+    "fluid": "adventtic:molten_blazium",
+    "amount": 16
+  },
+  "temperature": 480,
+  "time": 16
+}

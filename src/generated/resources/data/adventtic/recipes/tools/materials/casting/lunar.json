@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "tag": "forge:molten_lunar",
+    "amount": 144
+  },
+  "temperature": 205,
+  "output": "adventtic:lunar"
+}

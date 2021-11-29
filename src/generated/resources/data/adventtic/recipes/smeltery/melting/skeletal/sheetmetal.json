@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:sheetmetals/skeletal",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:sheetmetals/skeletal"
+  },
+  "result": {
+    "fluid": "adventtic:molten_skeletal",
+    "amount": 144
+  },
+  "temperature": 60,
+  "time": 31
+}

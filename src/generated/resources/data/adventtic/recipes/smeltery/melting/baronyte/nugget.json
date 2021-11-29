@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:nuggets/baronyte",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/baronyte"
+  },
+  "result": {
+    "fluid": "adventtic:molten_baronyte",
+    "amount": 16
+  },
+  "temperature": 280,
+  "time": 14
+}

@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/ghastly",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/ghastly"
+  },
+  "result": {
+    "fluid": "adventtic:molten_ghastly",
+    "amount": 1296
+  },
+  "temperature": 90,
+  "time": 98
+}

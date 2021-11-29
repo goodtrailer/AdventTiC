@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "tag": "forge:molten_rosite",
+    "amount": 144
+  },
+  "temperature": 100,
+  "output": "adventtic:rosite"
+}

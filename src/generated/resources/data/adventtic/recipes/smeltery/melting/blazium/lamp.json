@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "aoa3:blazium_lamp"
+  },
+  "result": {
+    "fluid": "adventtic:molten_blazium",
+    "amount": 144
+  },
+  "temperature": 480,
+  "time": 49
+}

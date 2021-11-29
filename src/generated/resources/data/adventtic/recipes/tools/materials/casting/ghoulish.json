@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "tag": "forge:molten_ghoulish",
+    "amount": 144
+  },
+  "temperature": 80,
+  "output": "adventtic:ghoulish"
+}

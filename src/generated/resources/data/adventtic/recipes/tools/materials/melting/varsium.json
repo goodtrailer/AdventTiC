@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "adventtic:varsium",
+  "temperature": 150,
+  "result": {
+    "fluid": "adventtic:molten_varsium",
+    "amount": 144
+  }
+}

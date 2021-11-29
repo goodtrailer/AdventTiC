@@ -10,7 +10,7 @@ import slimeknights.tconstruct.tools.stats.HeadMaterialStats;
 public class AdventTiCMaterialStatsProvider extends AbstractMaterialStatsDataProvider
 {
     public static final String NAME = "AdventTiC Material Stats";
-    
+
     public AdventTiCMaterialStatsProvider(DataGenerator gen,
             AbstractMaterialDataProvider materials)
     {
@@ -30,7 +30,7 @@ public class AdventTiCMaterialStatsProvider extends AbstractMaterialStatsDataPro
         addHarvestMaterials();
         addWeaponMaterials();
     }
-    
+
     private void addGeneralMaterials()
     {
         addMaterialStats(AdventTiCMaterials.BLAZIUM,
@@ -65,13 +65,13 @@ public class AdventTiCMaterialStatsProvider extends AbstractMaterialStatsDataPro
                 new HandleMaterialStats(0.75f, 1.0f, 1.0f, 1.0f),
                 new HeadMaterialStats(610, 10.0f, 5, 4.3f),
                 ExtraMaterialStats.DEFAULT);
-        
+
         addMaterialStats(AdventTiCMaterials.CHARGER,
                 new HandleMaterialStats(0.5f, 1.0f, 1.0f, 1.0f),
                 new HeadMaterialStats(110, 2.4f, 0, 2.5f),
                 ExtraMaterialStats.DEFAULT);
     }
-    
+
     private void addHarvestMaterials()
     {
         addMaterialStats(AdventTiCMaterials.LUNAR,
@@ -79,7 +79,7 @@ public class AdventTiCMaterialStatsProvider extends AbstractMaterialStatsDataPro
                 new HeadMaterialStats(660, 3.8f, 6, 2.0f),
                 ExtraMaterialStats.DEFAULT);
     }
-    
+
     private void addWeaponMaterials()
     {
         addMaterialStats(AdventTiCMaterials.BARONYTE,

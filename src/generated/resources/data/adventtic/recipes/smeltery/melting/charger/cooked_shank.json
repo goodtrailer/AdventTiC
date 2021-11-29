@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "aoa3:cooked_charger_shank"
+  },
+  "result": {
+    "fluid": "adventtic:molten_charger",
+    "amount": 20
+  },
+  "temperature": 40,
+  "time": 11
+}

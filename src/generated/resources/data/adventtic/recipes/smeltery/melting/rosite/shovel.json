@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "aoa3:rosite_shovel"
+  },
+  "result": {
+    "fluid": "adventtic:molten_rosite",
+    "amount": 144
+  },
+  "temperature": 100,
+  "time": 33
+}

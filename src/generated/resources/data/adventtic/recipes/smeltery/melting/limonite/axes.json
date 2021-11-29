@@ -1,0 +1,17 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {
+      "item": "aoa3:limonite_axe"
+    },
+    {
+      "item": "aoa3:limonite_pickaxe"
+    }
+  ],
+  "result": {
+    "fluid": "adventtic:molten_limonite",
+    "amount": 432
+  },
+  "temperature": 50,
+  "time": 53
+}

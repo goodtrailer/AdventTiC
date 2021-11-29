@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "tag": "forge:molten_limonite",
+    "amount": 144
+  },
+  "temperature": 50,
+  "output": "adventtic:limonite"
+}

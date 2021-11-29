@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/ghoulish",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/ghoulish"
+  },
+  "value": 9,
+  "needed": 1,
+  "material": "adventtic:ghoulish",
+  "leftover": {
+    "tag": "forge:ingots/ghoulish"
+  }
+}

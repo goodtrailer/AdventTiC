@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "adventtic:limonite",
+  "temperature": 50,
+  "result": {
+    "fluid": "adventtic:molten_limonite",
+    "amount": 144
+  }
+}

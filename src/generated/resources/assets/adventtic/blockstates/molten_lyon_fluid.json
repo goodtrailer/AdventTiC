@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "adventtic:block/molten_lyon_fluid"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:nuggets/lyon",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/lyon"
+  },
+  "result": {
+    "fluid": "adventtic:molten_lyon",
+    "amount": 16
+  },
+  "temperature": 220,
+  "time": 13
+}

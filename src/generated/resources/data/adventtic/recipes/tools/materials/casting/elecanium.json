@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "tag": "forge:molten_elecanium",
+    "amount": 144
+  },
+  "temperature": 370,
+  "output": "adventtic:elecanium"
+}

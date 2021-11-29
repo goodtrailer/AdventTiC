@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:plates/limonite",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:plates/limonite"
+  },
+  "result": {
+    "fluid": "adventtic:molten_limonite",
+    "amount": 144
+  },
+  "temperature": 50,
+  "time": 31
+}

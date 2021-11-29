@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:wires/elecanium",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:wires/elecanium"
+  },
+  "result": {
+    "fluid": "adventtic:molten_elecanium",
+    "amount": 72
+  },
+  "temperature": 370,
+  "time": 9
+}

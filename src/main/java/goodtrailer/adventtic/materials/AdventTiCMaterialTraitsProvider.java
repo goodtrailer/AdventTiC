@@ -9,11 +9,10 @@ import slimeknights.tconstruct.tools.TinkerModifiers;
 public class AdventTiCMaterialTraitsProvider extends AbstractMaterialTraitDataProvider
 {
     public static final String NAME = "AdventTiC Material Traits";
-    
-    public AdventTiCMaterialTraitsProvider(DataGenerator gen,
-            AbstractMaterialDataProvider materials)
+
+    public AdventTiCMaterialTraitsProvider(DataGenerator gen, AbstractMaterialDataProvider mat)
     {
-        super(gen, materials);
+        super(gen, mat);
     }
 
     @Override
@@ -29,7 +28,7 @@ public class AdventTiCMaterialTraitsProvider extends AbstractMaterialTraitDataPr
         addHarvestMaterials();
         addWeaponMaterials();
     }
-    
+
     private void addGeneralMaterials()
     {
         addDefaultTraits(AdventTiCMaterials.BLAZIUM,
@@ -52,7 +51,7 @@ public class AdventTiCMaterialTraitsProvider extends AbstractMaterialTraitDataPr
         addDefaultTraits(AdventTiCMaterials.SKELETAL,
                 AdventTiCModifiers.BONE_SHOCK.get(),
                 AdventTiCModifiers.HIGH_IN_CALCIUM.get());
-        
+
         addDefaultTraits(AdventTiCMaterials.CHARGER,
                 AdventTiCModifiers.TWEETING.get());
     }
@@ -62,7 +61,7 @@ public class AdventTiCMaterialTraitsProvider extends AbstractMaterialTraitDataPr
         addDefaultTraits(AdventTiCMaterials.LUNAR,
                 AdventTiCModifiers.COUNTERWEIGHT.get());
     }
-    
+
     private void addWeaponMaterials()
     {
         addDefaultTraits(AdventTiCMaterials.BARONYTE,

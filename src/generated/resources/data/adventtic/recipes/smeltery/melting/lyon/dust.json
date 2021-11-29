@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:dusts/lyon",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:dusts/lyon"
+  },
+  "result": {
+    "fluid": "adventtic:molten_lyon",
+    "amount": 144
+  },
+  "temperature": 220,
+  "time": 29
+}

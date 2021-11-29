@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "adventtic:emberstone",
+  "temperature": 500,
+  "result": {
+    "fluid": "adventtic:molten_emberstone",
+    "amount": 144
+  }
+}

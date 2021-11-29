@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "aoa3:skeletal_bow"
+  },
+  "result": {
+    "fluid": "adventtic:molten_skeletal",
+    "amount": 432
+  },
+  "temperature": 60,
+  "time": 54
+}
