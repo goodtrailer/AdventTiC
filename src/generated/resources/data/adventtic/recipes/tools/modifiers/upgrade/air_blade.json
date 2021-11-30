@@ -6,7 +6,7 @@
     }
   ],
   "tools": {
-    "tag": "adventtic:modifiable/melee/sweep"
+    "tag": "tconstruct:modifiable"
   },
   "slots": {
     "upgrades": 1

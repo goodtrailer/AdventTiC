@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:modifier_salvage",
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  },
+  "slots": {
+    "upgrades": 1
+  },
+  "modifier": "adventtic:butcherer",
+  "min_level": 1,
+  "salvage": [
+    {
+      "item": "aoa3:bloodstone",
+      "min": 2,
+      "max": 3
+    }
+  ]
+}

@@ -1,3 +1,3 @@
 - melting byproducts
-- salvage modifiers
 - traits
+- handle stats
