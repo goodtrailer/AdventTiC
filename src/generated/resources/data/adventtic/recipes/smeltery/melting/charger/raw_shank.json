@@ -8,5 +8,11 @@
     "amount": 17
   },
   "temperature": 38,
-  "time": 10
+  "time": 10,
+  "byproducts": [
+    {
+      "fluid": "adventtic:molten_shyrestone",
+      "amount": 1
+    }
+  ]
 }

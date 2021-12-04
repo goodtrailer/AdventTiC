@@ -56,20 +56,20 @@ public class AdventTiCMeltingRecipeProvider extends BaseRecipeProvider
     @Override
     protected void buildShapelessRecipes(Consumer<IFinishedRecipe> con)
     {
-        metal(con, AdventTiCFluids.MOLTEN_BARONYTE);
-        metal(con, AdventTiCFluids.MOLTEN_BLAZIUM);
+        metal(con, AdventTiCFluids.MOLTEN_BARONYTE, AdventTiCByproducts.VARSIUM);
+        metal(con, AdventTiCFluids.MOLTEN_BLAZIUM, AdventTiCByproducts.BARONYTE);
         metal(con, AdventTiCFluids.MOLTEN_ELECANIUM);
         metal(con, AdventTiCFluids.MOLTEN_EMBERSTONE);
-        metal(con, AdventTiCFluids.MOLTEN_GHASTLY);
-        metal(con, AdventTiCFluids.MOLTEN_GHOULISH);
-        metal(con, AdventTiCFluids.MOLTEN_LIMONITE);
+        metal(con, AdventTiCFluids.MOLTEN_GHASTLY, AdventTiCByproducts.GHOULISH);
+        metal(con, AdventTiCFluids.MOLTEN_GHOULISH, AdventTiCByproducts.GHASTLY);
+        metal(con, AdventTiCFluids.MOLTEN_LIMONITE, AdventTiCByproducts.ROSITE);
         metal(con, AdventTiCFluids.MOLTEN_LUNAR);
         metal(con, AdventTiCFluids.MOLTEN_LYON);
         metal(con, AdventTiCFluids.MOLTEN_MYSTITE);
-        metal(con, AdventTiCFluids.MOLTEN_ROSITE);
+        metal(con, AdventTiCFluids.MOLTEN_ROSITE, AdventTiCByproducts.LIMONITE);
         metal(con, AdventTiCFluids.MOLTEN_SHYRESTONE);
         metal(con, AdventTiCFluids.MOLTEN_SKELETAL);
-        metal(con, AdventTiCFluids.MOLTEN_VARSIUM);
+        metal(con, AdventTiCFluids.MOLTEN_VARSIUM, AdventTiCByproducts.BARONYTE);
 
         tools(con, AdventTiCFluids.MOLTEN_EMBERSTONE, AoATools.EMBERSTONE_SHOVEL,
                 AoAWeapons.EMBERSTONE_SWORD, AoATools.EMBERSTONE_AXE, AoATools.EMBERSTONE_PICKAXE);
@@ -97,9 +97,10 @@ public class AdventTiCMeltingRecipeProvider extends BaseRecipeProvider
                 AoAItems.CANNONBALL);
         items(con, AdventTiCFluids.MOLTEN_SKELETAL, "bow", 3 * FluidValues.INGOT,
                 AoAWeapons.SKELETAL_BOW);
-        items(con, AdventTiCFluids.MOLTEN_CHARGER, "raw_shank", 17, 38, AoAItems.RAW_CHARGER_SHANK);
+        items(con, AdventTiCFluids.MOLTEN_CHARGER, "raw_shank", 17, 38,
+                AdventTiCByproducts.SHYRESTONE_SMALL, AoAItems.RAW_CHARGER_SHANK);
         items(con, AdventTiCFluids.MOLTEN_CHARGER, "cooked_shank", 20, 40,
-                AoAItems.COOKED_CHARGER_SHANK);
+                AdventTiCByproducts.SHYRESTONE, AoAItems.COOKED_CHARGER_SHANK);
 
         entities(con, AdventTiCFluids.MOLTEN_CHARGER, "charger", 6, 2, AoAEntities.Mobs.CHARGER,
                 AoAEntities.Mobs.DESERT_CHARGER, AoAEntities.Mobs.HILL_CHARGER,
@@ -109,10 +110,11 @@ public class AdventTiCMeltingRecipeProvider extends BaseRecipeProvider
                 AoAEntities.Mobs.KING_CHARGER);
     }
 
-    private void metal(Consumer<IFinishedRecipe> con, FluidObject<ForgeFlowingFluid> molten)
+    private void metal(Consumer<IFinishedRecipe> con, FluidObject<ForgeFlowingFluid> molten,
+            AdventTiCByproducts.Byproduct... byproduct)
     {
         String mat = molten.getId().getPath().substring(AdventTiCFluids.MOLTEN_PREFIX.length());
-        metalMelting(con, molten.get(), mat, true, FOLDER, true);
+        metalMelting(con, molten.get(), mat, true, FOLDER, true, byproduct);
     }
 
     private void tools(Consumer<IFinishedRecipe> con, FluidObject<ForgeFlowingFluid> molten,
@@ -132,47 +134,50 @@ public class AdventTiCMeltingRecipeProvider extends BaseRecipeProvider
 
     @SafeVarargs
     private final <T extends IForgeRegistryEntry<? super T> & IItemProvider> void items(
-            Consumer<IFinishedRecipe> con, FluidObject<ForgeFlowingFluid> molten,
-            String name, int amount, RegistryObject<T>... items)
+            Consumer<IFinishedRecipe> con, FluidObject<ForgeFlowingFluid> molten, String name,
+            int amount, RegistryObject<T> item, RegistryObject<T>... items)
     {
-        String mat = molten.getId().getPath().substring(AdventTiCFluids.MOLTEN_PREFIX.length());
-
-        IItemProvider[] itemProviders = new IItemProvider[items.length];
-        for (int i = 0; i < items.length; i++)
-            itemProviders[i] = items[i].get();
-
-        MeltingRecipeBuilder.melting(Ingredient.of(itemProviders), molten.get(), amount)
-                .build(con, modResource(FOLDER + mat + "/" + name));
+        items(con, molten, name, amount, null, null, item, items);
     }
 
     @SafeVarargs
     private final <T extends IForgeRegistryEntry<? super T> & IItemProvider> void items(
-            Consumer<IFinishedRecipe> con, FluidObject<ForgeFlowingFluid> molten,
-            String name, int amount, int temperature, RegistryObject<T>... items)
+            Consumer<IFinishedRecipe> con, FluidObject<ForgeFlowingFluid> molten, String name,
+            int amount, Integer temperature, AdventTiCByproducts.Byproduct byproduct,
+            RegistryObject<T> item, RegistryObject<T>... items)
     {
         String mat = molten.getId().getPath().substring(AdventTiCFluids.MOLTEN_PREFIX.length());
-
-        IItemProvider[] itemProviders = new IItemProvider[items.length];
-        for (int i = 0; i < items.length; i++)
-            itemProviders[i] = items[i].get();
-
         FluidStack output = new FluidStack(molten.get(), amount);
-        MeltingRecipeBuilder
-                .melting(Ingredient.of(itemProviders), output, temperature,
-                        IMeltingRecipe.calcTimeForAmount(temperature, amount))
-                .build(con, modResource(FOLDER + mat + "/" + name));
+
+        IItemProvider[] itemProviders = new IItemProvider[items.length + 1];
+        itemProviders[0] = item.get();
+        for (int i = 0; i < items.length; i++)
+            itemProviders[i + 1] = items[i].get();
+
+        MeltingRecipeBuilder builder;
+        if (temperature != null)
+            builder = MeltingRecipeBuilder.melting(Ingredient.of(itemProviders), output,
+                    temperature, IMeltingRecipe.calcTimeForAmount(temperature, amount));
+        else
+            builder = MeltingRecipeBuilder.melting(Ingredient.of(itemProviders), output, amount);
+
+        if (byproduct != null)
+            builder.addByproduct(new FluidStack(byproduct.getFluid(), byproduct.getNuggets()));
+
+        builder.build(con, modResource(FOLDER + mat + "/" + name));
     }
 
     @SafeVarargs
     private final <T extends Entity> void entities(Consumer<IFinishedRecipe> con,
             FluidObject<ForgeFlowingFluid> molten, String name, int amount, int damage,
-            RegistryObject<EntityType<T>>... entities)
+            RegistryObject<EntityType<T>> entity, RegistryObject<EntityType<T>>... entities)
     {
         String mat = molten.getId().getPath().substring(AdventTiCFluids.MOLTEN_PREFIX.length());
 
-        EntityType<?>[] entityTypes = new EntityType<?>[entities.length];
+        EntityType<?>[] entityTypes = new EntityType<?>[entities.length + 1];
+        entityTypes[0] = entity.get();
         for (int i = 0; i < entities.length; i++)
-            entityTypes[i] = entities[i].get();
+            entityTypes[i + 1] = entities[i].get();
 
         FluidStack output = new FluidStack(molten.get(), amount);
         EntityMeltingRecipeBuilder.melting(EntityIngredient.of(entityTypes), output, damage)

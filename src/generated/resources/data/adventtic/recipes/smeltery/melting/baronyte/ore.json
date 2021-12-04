@@ -17,5 +17,11 @@
     "amount": 144
   },
   "temperature": 280,
-  "time": 62
+  "time": 62,
+  "byproducts": [
+    {
+      "fluid": "adventtic:molten_varsium",
+      "amount": 48
+    }
+  ]
 }

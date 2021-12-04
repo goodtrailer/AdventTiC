@@ -17,5 +17,11 @@
     "amount": 144
   },
   "temperature": 90,
-  "time": 49
+  "time": 49,
+  "byproducts": [
+    {
+      "fluid": "adventtic:molten_ghoulish",
+      "amount": 48
+    }
+  ]
 }

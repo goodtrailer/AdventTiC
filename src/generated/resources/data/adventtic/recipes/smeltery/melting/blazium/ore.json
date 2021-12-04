@@ -17,5 +17,11 @@
     "amount": 144
   },
   "temperature": 480,
-  "time": 74
+  "time": 74,
+  "byproducts": [
+    {
+      "fluid": "adventtic:molten_baronyte",
+      "amount": 48
+    }
+  ]
 }

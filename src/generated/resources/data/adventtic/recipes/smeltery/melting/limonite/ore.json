@@ -17,5 +17,11 @@
     "amount": 144
   },
   "temperature": 50,
-  "time": 46
+  "time": 46,
+  "byproducts": [
+    {
+      "fluid": "adventtic:molten_rosite",
+      "amount": 48
+    }
+  ]
 }

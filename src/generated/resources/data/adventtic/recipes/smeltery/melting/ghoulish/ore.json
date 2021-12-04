@@ -17,5 +17,11 @@
     "amount": 144
   },
   "temperature": 80,
-  "time": 48
+  "time": 48,
+  "byproducts": [
+    {
+      "fluid": "adventtic:molten_ghastly",
+      "amount": 48
+    }
+  ]
 }
