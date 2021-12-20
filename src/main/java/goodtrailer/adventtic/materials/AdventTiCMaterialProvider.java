@@ -33,15 +33,15 @@ public class AdventTiCMaterialProvider extends AbstractMaterialDataProvider
     private void addGeneralMaterials()
     {
         addCompatMetalMaterial(AdventTiCMaterials.BLAZIUM,
-                4,
+                3,
                 ORDER_GENERAL + ORDER_COMPAT,
                 0xFF5D00);
         addCompatMetalMaterial(AdventTiCMaterials.EMBERSTONE,
-                5,
+                3,
                 ORDER_GENERAL + ORDER_NETHER + ORDER_COMPAT,
                 0x6B1919);
         addCompatMetalMaterial(AdventTiCMaterials.GHOULISH,
-                6,
+                4,
                 ORDER_GENERAL + ORDER_COMPAT,
                 0x99A8FC);
         addCompatMetalMaterial(AdventTiCMaterials.LIMONITE,
@@ -49,19 +49,19 @@ public class AdventTiCMaterialProvider extends AbstractMaterialDataProvider
                 ORDER_GENERAL + ORDER_COMPAT,
                 0xFFB200);
         addCompatMetalMaterial(AdventTiCMaterials.LYON,
-                6,
+                3,
                 ORDER_GENERAL + ORDER_COMPAT,
                 0xA88100);
         addCompatMetalMaterial(AdventTiCMaterials.ROSITE,
-                3,
+                2,
                 ORDER_GENERAL + ORDER_COMPAT,
                 0xD31336);
         addCompatMetalMaterial(AdventTiCMaterials.SHYRESTONE,
-                6,
+                4,
                 ORDER_GENERAL + ORDER_COMPAT,
                 0x009BFC);
         addCompatMetalMaterial(AdventTiCMaterials.SKELETAL,
-                5,
+                3,
                 ORDER_GENERAL + ORDER_COMPAT,
                 0xFFE8A0);
 
@@ -70,7 +70,7 @@ public class AdventTiCMaterialProvider extends AbstractMaterialDataProvider
                 new ItemExistsCondition(AoAItems.RAW_CHARGER_SHANK.getId()),
                 new ItemExistsCondition(AoAItems.COOKED_CHARGER_SHANK.getId()));
         addMaterial(AdventTiCMaterials.CHARGER,
-                0,
+                1,
                 ORDER_GENERAL + ORDER_COMPAT,
                 false,
                 0xFFE500,
@@ -81,7 +81,7 @@ public class AdventTiCMaterialProvider extends AbstractMaterialDataProvider
     private void addHarvestMaterials()
     {
         addCompatMetalMaterial(AdventTiCMaterials.LUNAR,
-                6,
+                4,
                 ORDER_HARVEST + ORDER_COMPAT,
                 0xFF8CBF);
     }
@@ -89,19 +89,19 @@ public class AdventTiCMaterialProvider extends AbstractMaterialDataProvider
     private void addWeaponMaterials()
     {
         addCompatMetalMaterial(AdventTiCMaterials.BARONYTE,
-                4,
+                3,
                 ORDER_WEAPON + ORDER_COMPAT,
                 0xCE0000);
         addCompatMetalMaterial(AdventTiCMaterials.ELECANIUM,
-                6,
+                4,
                 ORDER_WEAPON + ORDER_COMPAT,
                 0x00F9F9);
         addCompatMetalMaterial(AdventTiCMaterials.GHASTLY,
-                6,
+                4,
                 ORDER_WEAPON + ORDER_COMPAT,
                 0xCFF99F);
         addCompatMetalMaterial(AdventTiCMaterials.MYSTITE,
-                6,
+                3,
                 ORDER_WEAPON + ORDER_COMPAT,
                 0x6BFFBE);
         addCompatMetalMaterial(AdventTiCMaterials.VARSIUM,

@@ -2,7 +2,6 @@
 - handle stats
 - trait part restrictions
 - trait levels
-- material tiers
 
 new features (may or may not be implemented)
 - balancing

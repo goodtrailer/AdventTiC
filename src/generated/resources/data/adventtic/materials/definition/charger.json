@@ -17,7 +17,7 @@
     "type": "forge:or"
   },
   "craftable": false,
-  "tier": 0,
+  "tier": 1,
   "sortOrder": 5,
   "textColor": "#FFE500",
   "hidden": false
