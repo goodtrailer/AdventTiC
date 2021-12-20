@@ -12,59 +12,30 @@ import slimeknights.tconstruct.library.recipe.FluidValues;
 
 public final class AdventTiCByproducts
 {
-    public static final ArrayList<Byproduct> BARATHOS = new ArrayList<Byproduct>();
-    public static final ArrayList<Byproduct> GRECKON = new ArrayList<Byproduct>();
-    public static final ArrayList<Byproduct> OVERWORLD = new ArrayList<Byproduct>();
-    public static final ArrayList<Byproduct> SHYRELANDS = new ArrayList<Byproduct>();
+    public static final ArrayList<Byproduct> BYPRODUCTS = new ArrayList<Byproduct>();
 
     // Barathos
-    public static final Byproduct BARONYTE = barathos(AdventTiCFluids.MOLTEN_BARONYTE);
-    public static final Byproduct BLAZIUM = barathos(AdventTiCFluids.MOLTEN_BLAZIUM);
-    public static final Byproduct VARSIUM = barathos(AdventTiCFluids.MOLTEN_VARSIUM);
+    public static final Byproduct BARONYTE = byproduct(AdventTiCFluids.MOLTEN_BARONYTE);
+    public static final Byproduct BLAZIUM = byproduct(AdventTiCFluids.MOLTEN_BLAZIUM);
+    public static final Byproduct VARSIUM = byproduct(AdventTiCFluids.MOLTEN_VARSIUM);
 
     // Greckon
-    public static final Byproduct GHOULISH = greckon(AdventTiCFluids.MOLTEN_GHOULISH);
-    public static final Byproduct GHASTLY = greckon(AdventTiCFluids.MOLTEN_GHASTLY);
+    public static final Byproduct GHOULISH = byproduct(AdventTiCFluids.MOLTEN_GHOULISH);
+    public static final Byproduct GHASTLY = byproduct(AdventTiCFluids.MOLTEN_GHASTLY);
 
     // Overworld
-    public static final Byproduct LIMONITE = overworld(AdventTiCFluids.MOLTEN_LIMONITE);
-    public static final Byproduct ROSITE = overworld(AdventTiCFluids.MOLTEN_ROSITE);
+    public static final Byproduct LIMONITE = byproduct(AdventTiCFluids.MOLTEN_LIMONITE);
+    public static final Byproduct ROSITE = byproduct(AdventTiCFluids.MOLTEN_ROSITE);
 
     // Shyrelands :) i wonder what this is for
-    public static final Byproduct SHYRESTONE_SMALL = shyre(AdventTiCFluids.MOLTEN_SHYRESTONE, 1);
-    public static final Byproduct SHYRESTONE = shyre(AdventTiCFluids.MOLTEN_SHYRESTONE, 2);
-
-    private static Byproduct barathos(FluidObject<ForgeFlowingFluid> molten, int... amount)
-    {
-        return amount.length > 0 ? byproduct(molten, amount[0], BARATHOS)
-                : byproduct(molten, null, BARATHOS);
-    }
-
-    private static Byproduct greckon(FluidObject<ForgeFlowingFluid> molten, int... amount)
-    {
-        return amount.length > 0 ? byproduct(molten, amount[0], GRECKON)
-                : byproduct(molten, null, GRECKON);
-    }
-
-    private static Byproduct overworld(FluidObject<ForgeFlowingFluid> molten, int... amount)
-    {
-        return amount.length > 0 ? byproduct(molten, amount[0], OVERWORLD)
-                : byproduct(molten, null, OVERWORLD);
-    }
-
-    private static Byproduct shyre(FluidObject<ForgeFlowingFluid> molten, int... amount)
-    {
-        return amount.length > 0 ? byproduct(molten, amount[0], SHYRELANDS)
-                : byproduct(molten, null, SHYRELANDS);
-    }
+    public static final Byproduct SHYRESTONE_LESS = byproduct(AdventTiCFluids.MOLTEN_SHYRESTONE, 1);
+    public static final Byproduct SHYRESTONE = byproduct(AdventTiCFluids.MOLTEN_SHYRESTONE, 2);
 
     @SafeVarargs
-    private static Byproduct byproduct(FluidObject<ForgeFlowingFluid> molten, Integer amount,
-            ArrayList<Byproduct>... lists)
+    private static Byproduct byproduct(FluidObject<ForgeFlowingFluid> molten, int... amount)
     {
-        Byproduct b = amount == null ? new Byproduct(molten) : new Byproduct(molten, amount);
-        for (int i = 0; i < lists.length; i++)
-            lists[i].add(b);
+        Byproduct b = amount.length > 0 ? new Byproduct(molten, amount[0]) : new Byproduct(molten);
+        BYPRODUCTS.add(b);
         return b;
     }
 

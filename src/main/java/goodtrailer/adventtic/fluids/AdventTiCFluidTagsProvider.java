@@ -1,7 +1,6 @@
 package goodtrailer.adventtic.fluids;
 
 import goodtrailer.adventtic.AdventTiC;
-import goodtrailer.adventtic.fluids.AdventTiCFluids;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.FluidTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;

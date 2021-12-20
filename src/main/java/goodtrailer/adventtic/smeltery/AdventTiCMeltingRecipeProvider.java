@@ -98,7 +98,7 @@ public class AdventTiCMeltingRecipeProvider extends BaseRecipeProvider
         items(con, AdventTiCFluids.MOLTEN_SKELETAL, "bow", 3 * FluidValues.INGOT,
                 AoAWeapons.SKELETAL_BOW);
         items(con, AdventTiCFluids.MOLTEN_CHARGER, "raw_shank", 17, 38,
-                AdventTiCByproducts.SHYRESTONE_SMALL, AoAItems.RAW_CHARGER_SHANK);
+                AdventTiCByproducts.SHYRESTONE_LESS, AoAItems.RAW_CHARGER_SHANK);
         items(con, AdventTiCFluids.MOLTEN_CHARGER, "cooked_shank", 20, 40,
                 AdventTiCByproducts.SHYRESTONE, AoAItems.COOKED_CHARGER_SHANK);
 

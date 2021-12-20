@@ -1,7 +1,5 @@
 package goodtrailer.adventtic.modifiers.upgrades;
 
-import java.util.Random;
-
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -17,12 +15,9 @@ public class RefreezingModifier extends Modifier
     public static final float PROB_PER_LEVEL = 1 / 36f;
     public static final float SELECTED_COEFFICIENT = 2f;
 
-    private Random rng;
-
     public RefreezingModifier()
     {
         super(COLOR);
-        rng = new Random();
     }
 
     @Override
@@ -38,7 +33,7 @@ public class RefreezingModifier extends Modifier
             repairProb *= SELECTED_COEFFICIENT;
 
         float temp = WorldUtil.getAmbientTemperature(world, holder.blockPosition());
-        if (rng.nextFloat() < repairProb && temp < MAX_TEMP && !tool.isBroken())
+        if (RANDOM.nextFloat() < repairProb && temp < MAX_TEMP && !tool.isBroken())
             ToolDamageUtil.repair(tool, 1);
     }
 }

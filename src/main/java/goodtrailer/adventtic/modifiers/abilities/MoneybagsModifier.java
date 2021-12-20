@@ -1,7 +1,5 @@
 package goodtrailer.adventtic.modifiers.abilities;
 
-import java.util.Random;
-
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -24,12 +22,9 @@ public class MoneybagsModifier extends Modifier
 
     private static final float coin_increment = 2f / (COIN_COUNT_SQRT - 1);
 
-    private Random rng;
-
     public MoneybagsModifier()
     {
         super(COLOR);
-        rng = new Random();
     }
 
     @Override
@@ -45,9 +40,9 @@ public class MoneybagsModifier extends Modifier
         {
             for (float z = -1f; z <= 1f; z += coin_increment)
             {
-                if (rng.nextFloat() < level * COIN_PROB_PER_LEVEL)
+                if (RANDOM.nextFloat() < level * COIN_PROB_PER_LEVEL)
                 {
-                    Item coinType = rng.nextFloat() < level * SILVER_PROB_PER_LEVEL
+                    Item coinType = RANDOM.nextFloat() < level * SILVER_PROB_PER_LEVEL
                             ? AoAItems.SILVER_COIN.get()
                             : AoAItems.COPPER_COIN.get();
 

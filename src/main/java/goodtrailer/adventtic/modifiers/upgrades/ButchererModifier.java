@@ -1,7 +1,5 @@
 package goodtrailer.adventtic.modifiers.upgrades;
 
-import java.util.Random;
-
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.tslat.aoa3.entity.misc.BloodlustEntity;
@@ -17,12 +15,9 @@ public class ButchererModifier extends Modifier
     public static final float BASE_ATTACK_SPEED = 1.6f;
     public static final float PROB_PER_LEVEL = 0.015f;
 
-    private Random rng;
-
     public ButchererModifier()
     {
         super(COLOR);
-        rng = new Random();
     }
 
     @Override
@@ -37,7 +32,7 @@ public class ButchererModifier extends Modifier
 
         float coef = BASE_ATTACK_SPEED / tool.getStats().getFloat(ToolStats.ATTACK_SPEED);
         float prob = coef * level * PROB_PER_LEVEL;
-        if (rng.nextFloat() < prob && ButcheryUtil.canMobSpawnBloodlust(target))
+        if (RANDOM.nextFloat() < prob && ButcheryUtil.canMobSpawnBloodlust(target))
             player.level.addFreshEntity(new BloodlustEntity(target.level, target.blockPosition()));
 
         return 0;

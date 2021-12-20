@@ -16,7 +16,7 @@ public class AirBladeModifier extends Modifier
     private boolean isSprinting;
     private float deltaWalkDist;
 
-    public static float getBonus(int level)
+    public static float coefficient(int level)
     {
         return level / (float) (level + 2);
     }
@@ -35,7 +35,7 @@ public class AirBladeModifier extends Modifier
         LivingEntity attacker = context.getAttacker();
         isSprinting = attacker.isSprinting();
         deltaWalkDist = attacker.walkDist - attacker.walkDistO;
-        return super.beforeEntityHit(tool, level, context, damage, baseKnockback, knockback);
+        return knockback;
     }
 
     @Override
@@ -62,7 +62,7 @@ public class AirBladeModifier extends Modifier
 
         LivingEntity attacker = context.getAttacker();
         Entity target = context.getTarget();
-        float damage = damageDealt * getBonus(level);
+        float damage = damageDealt * coefficient(level);
         ToolAttackUtil.dealDefaultDamage(attacker, target, damage);
     }
 
@@ -78,7 +78,7 @@ public class AirBladeModifier extends Modifier
             return;
 
         Entity target = context.getTarget();
-        float damage = damageDealt * getBonus(level);
+        float damage = damageDealt * coefficient(level);
         double range = tool.getModifierLevel(TinkerModifiers.expanded.get()) + 1;
 
         for (LivingEntity aoeTarget : attacker.level.getEntitiesOfClass(

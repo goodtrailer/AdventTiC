@@ -1,3 +1,11 @@
-- traits
+1.12 port
 - handle stats
-- slime island blacklist
+- trait part restrictions
+- trait levels
+- material tiers
+
+new features (may or may not be implemented)
+- balancing
+- new modifiers
+- armor modifiers
+- soul modifiers

@@ -120,8 +120,8 @@ public class AdventTiCEnglishProvider extends LanguageProvider
                 "Significantly increases durability gained when repairing the tool");
         addModifier(AdventTiCModifiers.EVIL_PRESSURE,
                 "Evil Pressure",
-                "Burden eternal...",
-                "Each hit has a chance to amplify negative effects present on mob");
+                "Burden, eternal...",
+                "Each hit has a chance to amplify and extend a negative effect on a mob");
         addModifier(AdventTiCModifiers.FLAMING_FURY,
                 "Flaming Fury",
                 "Making it third-degree!",
@@ -133,7 +133,7 @@ public class AdventTiCEnglishProvider extends LanguageProvider
         addModifier(AdventTiCModifiers.INFERNAL_ENERGY,
                 "Infernal Energy",
                 "Thermocoupling to the max!",
-                "Massively increases tool efficiency when on fire");
+                "Massively increases tool efficiency while on fire");
         addModifier(AdventTiCModifiers.LACED,
                 "Laced",
                 "Just a little touch of this~",
@@ -142,9 +142,11 @@ public class AdventTiCEnglishProvider extends LanguageProvider
                 "Runic",
                 "Imbued with runic energy!",
                 "Converts a portion of damage dealt into magic damage");
+        String runic = AdventTiCModifiers.RUNIC.getId().getPath();
+        addMisc("modifier", runic, "attack_damage", "Magic Damage");
         addModifier(AdventTiCModifiers.SHYRE_SYNTHESIS,
                 "Shyre Synthesis",
-                "Blue chlorophyll!?",
+                "Alien chlorophyll!?",
                 "Prevents the tool from taking damage when in direct sunlight");
         addModifier(AdventTiCModifiers.SOUL_HARVEST,
                 "Soul Harvest",
@@ -214,5 +216,18 @@ public class AdventTiCEnglishProvider extends LanguageProvider
         add(prefix + id, name);
         add(prefix + id + ".flavor", flavor);
         add(prefix + id + ".description", description);
+    }
+    
+    private void addMisc(String keyPart0, String keyPart2, String... keyPartsAndValue)
+    {
+        String[] keyParts = new String[keyPartsAndValue.length + 2];
+        keyParts[0] = keyPart0;
+        keyParts[1] = AdventTiC.MOD_ID;
+        keyParts[2] = keyPart2;
+        for (int i = 3; i < keyParts.length; i++)
+            keyParts[i] = keyPartsAndValue[i - 3];
+        String key = String.join(".", keyParts);
+        String value = keyPartsAndValue[keyPartsAndValue.length - 1];
+        add(key, value);
     }
 }
