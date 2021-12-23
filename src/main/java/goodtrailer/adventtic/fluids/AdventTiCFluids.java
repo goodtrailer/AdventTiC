@@ -11,12 +11,11 @@ import net.minecraftforge.fluids.ForgeFlowingFluid;
 import slimeknights.mantle.registration.ModelFluidAttributes;
 import slimeknights.mantle.registration.deferred.FluidDeferredRegister;
 import slimeknights.mantle.registration.object.FluidObject;
-import slimeknights.tconstruct.common.registration.FluidDeferredRegisterExtension;
 import slimeknights.tconstruct.library.materials.definition.MaterialId;
 
 public final class AdventTiCFluids
 {
-    public static final FluidDeferredRegister FLUIDS = new FluidDeferredRegisterExtension(
+    public static final FluidDeferredRegister FLUIDS = new FluidDeferredRegister(
             AdventTiC.MOD_ID);
 
     // Molten Fluids
