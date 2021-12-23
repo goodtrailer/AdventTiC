@@ -1,10 +1,22 @@
-1.12 port
-- handle stats
-- trait part restrictions
-- trait levels
+to-do, currently implementable
+---
 
-new features (may or may not be implemented)
+1.12 port:
+- handle stats
+
+new features:
 - balancing
 - new modifiers
 - armor modifiers
+
+
+
+waiting, currently not implementable
+---
+
+1.12 port:
+- trait part restrictions
+- trait part-specific levels
+
+new features:
 - soul modifiers

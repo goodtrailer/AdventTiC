@@ -2,7 +2,7 @@
   "default": [
     {
       "name": "tconstruct:writable",
-      "level": 1
+      "level": 2
     }
   ]
 }

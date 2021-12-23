@@ -4,6 +4,7 @@ import goodtrailer.adventtic.modifiers.AdventTiCModifiers;
 import net.minecraft.data.DataGenerator;
 import slimeknights.tconstruct.library.data.material.AbstractMaterialDataProvider;
 import slimeknights.tconstruct.library.data.material.AbstractMaterialTraitDataProvider;
+import slimeknights.tconstruct.library.modifiers.ModifierEntry;
 import slimeknights.tconstruct.tools.TinkerModifiers;
 
 public class AdventTiCMaterialTraitsProvider extends AbstractMaterialTraitDataProvider
@@ -45,7 +46,7 @@ public class AdventTiCMaterialTraitsProvider extends AbstractMaterialTraitDataPr
         addDefaultTraits(AdventTiCMaterials.LYON,
                 TinkerModifiers.magnetic.get());
         addDefaultTraits(AdventTiCMaterials.ROSITE,
-                TinkerModifiers.writable.get());
+                new ModifierEntry(TinkerModifiers.writable.get(), 2));
         addDefaultTraits(AdventTiCMaterials.SHYRESTONE,
                 AdventTiCModifiers.SHYRE_SYNTHESIS.get());
         addDefaultTraits(AdventTiCMaterials.SKELETAL,

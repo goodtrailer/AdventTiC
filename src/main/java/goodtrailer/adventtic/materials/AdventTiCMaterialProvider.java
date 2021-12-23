@@ -1,10 +1,6 @@
 package goodtrailer.adventtic.materials;
 
 import net.minecraft.data.DataGenerator;
-import net.minecraftforge.common.crafting.conditions.ItemExistsCondition;
-import net.minecraftforge.common.crafting.conditions.OrCondition;
-import net.tslat.aoa3.common.registration.AoAItems;
-import slimeknights.tconstruct.common.json.ConfigEnabledCondition;
 import slimeknights.tconstruct.library.data.material.AbstractMaterialDataProvider;
 
 public class AdventTiCMaterialProvider extends AbstractMaterialDataProvider
@@ -65,17 +61,11 @@ public class AdventTiCMaterialProvider extends AbstractMaterialDataProvider
                 ORDER_GENERAL + ORDER_COMPAT,
                 0xFFE8A0);
 
-        OrCondition chargerCondition = new OrCondition(
-                ConfigEnabledCondition.FORCE_INTEGRATION_MATERIALS,
-                new ItemExistsCondition(AoAItems.RAW_CHARGER_SHANK.getId()),
-                new ItemExistsCondition(AoAItems.COOKED_CHARGER_SHANK.getId()));
         addMaterial(AdventTiCMaterials.CHARGER,
-                1,
+                0,
                 ORDER_GENERAL + ORDER_COMPAT,
                 false,
-                0xFFE500,
-                false,
-                chargerCondition);
+                0xFFE500);
     }
 
     private void addHarvestMaterials()
