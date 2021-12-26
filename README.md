@@ -1,7 +1,7 @@
 <img src="src/main/resources/logo.png" alt="AdventTiC" width="300" height="300">
 
 # AdventTiC
-[Advent of Ascension](https://adventofascension.fandom.com/wiki/Advent_of_Ascension_Wiki) integration mod for [Tinkers' Construct](https://github.com/SlimeKnights/TinkersConstruct) 1.16.5.
+[Advent of Ascension](https://github.com/Tslat/Advent-Of-Ascension) integration mod for [Tinkers' Construct](https://github.com/SlimeKnights/TinkersConstruct) 1.16.5.
 
 AoA had TiC integration in 1.12.2, but because TiC is still only in alpha for 1.16.5, that integration hasn't yet been ported. This mod is a stopgap for one of my modpacks until Tslat re-implements TiC integration for 1.16.5.
 
@@ -16,6 +16,6 @@ Also, some modifiers/traits have received substantial changes because I felt lik
 
 ### Credits
 This mod depends on:
-* [Advent of Ascension](https://github.com/Tslat/Advent-Of-Ascension/) by [Tslat](https://github.com/Tslat)
-* [Tinkers Construct](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct) by the [Slime Knights](https://github.com/orgs/SlimeKnights/people)
+* [Advent of Ascension](https://github.com/Tslat/Advent-Of-Ascension) by [Tslat](https://github.com/Tslat)
+* [Tinkers Construct](https://github.com/SlimeKnights/TinkersConstruct) by the [Slime Knights](https://github.com/orgs/SlimeKnights/people)
 * [Mantle](https://github.com/SlimeKnights/Mantle) by the [Slime Knights](https://github.com/orgs/SlimeKnights/people)
