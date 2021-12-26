@@ -1,3 +1,4 @@
+<img src="src/main/resources/logo.png" alt="AdventTiC" width="300" height="300">
 # AdventTiC
 [Advent of Ascension](https://adventofascension.fandom.com/wiki/Advent_of_Ascension_Wiki) integration mod for [Tinkers' Construct](https://github.com/SlimeKnights/TinkersConstruct) 1.16.5.
 
