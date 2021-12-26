@@ -1,6 +1,9 @@
 to-do, currently implementable
 ---
 
+1.12 port:
+- modifier textures
+
 new features:
 - balancing
 - new modifiers
