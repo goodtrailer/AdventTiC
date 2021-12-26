@@ -1,9 +1,6 @@
 to-do, currently implementable
 ---
 
-1.12 port:
-- handle stats
-
 new features:
 - balancing
 - new modifiers
