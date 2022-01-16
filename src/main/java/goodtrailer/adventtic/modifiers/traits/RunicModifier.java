@@ -79,9 +79,6 @@ public class RunicModifier extends Modifier
         float magicDamage = (1 - physical) / physical;
         magicDamage *= context.isExtraAttack() ? extraNominalDamage : primaryNominalDamage;
         
-        System.out.println("physical -> " + (context.isExtraAttack() ? "(extra) " + extraNominalDamage : "(primary) " + primaryNominalDamage));
-        System.out.println("magic -> " + (context.isExtraAttack() ? "(extra) " : "(primary) ") + magicDamage);
-        
         Entity target = context.getTarget();
         return DamageUtil.dealMagicDamage(null, attacker, target, magicDamage, false);
     }
