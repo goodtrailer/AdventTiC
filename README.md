@@ -19,3 +19,6 @@ This mod depends on:
 * [Advent of Ascension](https://github.com/Tslat/Advent-Of-Ascension) by [Tslat](https://github.com/Tslat)
 * [Tinkers Construct](https://github.com/SlimeKnights/TinkersConstruct) by the [Slime Knights](https://github.com/orgs/SlimeKnights/people)
 * [Mantle](https://github.com/SlimeKnights/Mantle) by the [Slime Knights](https://github.com/orgs/SlimeKnights/people)
+
+Additional translations:
+* 简体中文 (Simplified Chinese) by [Kasualix](https://github.com/Kasualix)

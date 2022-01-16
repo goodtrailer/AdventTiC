@@ -51,7 +51,9 @@ public class AdventTiC
 
         if (e.includeClient())
         {
+            gen.addProvider(new AdventTiCChineseProvider(gen));
             gen.addProvider(new AdventTiCEnglishProvider(gen));
+            
             gen.addProvider(new AdventTiCFluidStateProvider(gen, efh));
             gen.addProvider(new AdventTiCItemModelProvider(gen, efh));
 

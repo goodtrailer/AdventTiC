@@ -39,13 +39,13 @@ official integration from the 1.12.2 version of the mods.
 [[dependencies.adventtic]]
     modId="mantle"
     mandatory=true
-    versionRange="[1.6.127,)"
+    versionRange="[1.6.152,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.adventtic]]
     modId="tconstruct"
     mandatory=true
-    versionRange="[3.2.1.296,)"
+    versionRange="[3.3.2.324,)"
     ordering="NONE"
     side="BOTH"
