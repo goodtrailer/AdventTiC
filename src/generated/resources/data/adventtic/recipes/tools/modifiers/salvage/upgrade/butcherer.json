@@ -1,5 +1,5 @@
 {
-  "type": "tconstruct:modifier_salvage",
+  "type": "tconstruct:incremental_modifier_salvage",
   "tools": {
     "tag": "tconstruct:modifiable"
   },
@@ -8,11 +8,8 @@
   },
   "modifier": "adventtic:butcherer",
   "min_level": 1,
-  "salvage": [
-    {
-      "item": "aoa3:bloodstone",
-      "min": 2,
-      "max": 3
-    }
-  ]
+  "salvage": {
+    "item": "aoa3:bloodstone",
+    "full": true
+  }
 }

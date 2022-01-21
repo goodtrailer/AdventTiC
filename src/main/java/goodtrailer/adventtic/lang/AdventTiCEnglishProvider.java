@@ -208,10 +208,10 @@ public class AdventTiCEnglishProvider extends LanguageProvider
         add(prefix + id, name);
     }
 
-    private void addModifier(RegistryObject<Modifier> modifier, String name, String flavor,
+    private <T extends Modifier> void addModifier(RegistryObject<T> mod, String name, String flavor,
             String description)
     {
-        String id = modifier.getId().getPath();
+        String id = mod.getId().getPath();
         String prefix = "modifier." + AdventTiC.MOD_ID + ".";
         add(prefix + id, name);
         add(prefix + id + ".flavor", flavor);

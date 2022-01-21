@@ -8,7 +8,11 @@ new features:
 - balancing
 - new modifiers
 - armor modifiers
+- metal spilling types
+- redo fluid temps
 
+maintenance:
+- lang base class
 
 
 waiting, currently not implementable

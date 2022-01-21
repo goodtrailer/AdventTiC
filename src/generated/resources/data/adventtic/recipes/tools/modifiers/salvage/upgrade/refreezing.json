@@ -1,5 +1,5 @@
 {
-  "type": "tconstruct:modifier_salvage",
+  "type": "tconstruct:incremental_modifier_salvage",
   "tools": {
     "tag": "tconstruct:modifiable"
   },
@@ -8,10 +8,8 @@
   },
   "modifier": "adventtic:refreezing",
   "min_level": 1,
-  "salvage": [
-    {
-      "item": "aoa3:ice_crystal",
-      "chance": 0.8
-    }
-  ]
+  "salvage": {
+    "item": "aoa3:ice_crystal",
+    "full": false
+  }
 }

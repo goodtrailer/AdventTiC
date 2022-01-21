@@ -10,9 +10,7 @@ AoA had TiC integration in 1.12.2, but because TiC is still only in alpha for 1.
 
 TiC 1.16.5 has pretty big changes from 1.12.2, such as modifier slots. Since 1.12.2 doesn't have modifier slots, I just selected slots based on what felt right.
 
-Some stats are based on values from the [official wiki](https://adventofascension.fandom.com/wiki/Third-Party_Mod_Integration/Tinker%27s_Construct), which sometimes conflicts with values from the [1.12.2 source](https://github.com/Tslat/Advent-Of-Ascension/tree/f6e05fc886ddc3d391a5f54e893cbdf9859ea939/source/hooks/tconstruct). Sometimes, I just preferred the wiki's values, even though they were wrong.
-
-Also, some modifiers/traits have received substantial changes because I felt like it, i.e. [Evil Pressure](src/main/java/goodtrailer/adventtic/traits/EvilPressureModifier.java). For Evil Pressure, I just thought the original implementaion made it completely underpowered and unusable.
+Also, some modifiers/traits have received substantial changes because I felt like it, i.e. [Evil Pressure](src/main/java/goodtrailer/adventtic/traits/EvilPressureModifier.java). For Evil Pressure, I just thought the original implementaion made it completely underpowered and unusable, since it only procs once per mob on average.
 
 ### Credits
 This mod depends on:

@@ -1,5 +1,5 @@
 {
-  "type": "tconstruct:modifier_salvage",
+  "type": "tconstruct:incremental_modifier_salvage",
   "tools": {
     "tag": "tconstruct:modifiable"
   },
@@ -8,11 +8,8 @@
   },
   "modifier": "adventtic:surprise_me",
   "min_level": 1,
-  "salvage": [
-    {
-      "item": "aoa3:confetti_pile",
-      "min": 3,
-      "max": 4
-    }
-  ]
+  "salvage": {
+    "item": "aoa3:confetti_pile",
+    "full": true
+  }
 }

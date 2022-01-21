@@ -1,11 +1,10 @@
 {
-  "type": "tconstruct:modifier",
-  "inputs": [
-    {
-      "item": "aoa3:bloodstone",
-      "amount_needed": 3
-    }
-  ],
+  "type": "tconstruct:incremental_modifier",
+  "input": {
+    "item": "aoa3:bloodstone"
+  },
+  "amount_per_item": 1,
+  "needed_per_level": 3,
   "tools": {
     "tag": "tconstruct:modifiable"
   },
