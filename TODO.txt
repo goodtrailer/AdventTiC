@@ -6,12 +6,8 @@ to-do, currently implementable
 
 new features:
 - balancing
-- new modifiers
 - armor modifiers
 - fluid spilling types
-
-maintenance:
-- lang base class
 
 
 waiting, currently not implementable
