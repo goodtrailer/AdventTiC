@@ -26,15 +26,47 @@ public class AdventTiCFluidTagsProvider extends FluidTagsProvider
     @Override
     protected void addTags()
     {
-        for (FluidObject<ForgeFlowingFluid> molten : AdventTiCFluids.MOLTEN)
-        {
-            tag(molten.getLocalTag()).add(molten.getStill(), molten.getFlowing());
-            tag(molten.getForgeTag()).addTag(molten.getLocalTag());
-            tag(TinkerTags.Fluids.METAL_LIKE).addTag(molten.getForgeTag());
-        }
+        cheap(AdventTiCFluids.MOLTEN_LIMONITE);
+        cheap(AdventTiCFluids.MOLTEN_ROSITE);
+        cheap(AdventTiCFluids.MOLTEN_CHARGER);
 
-        // TODO figure out spilling types
-        for (FluidObject<ForgeFlowingFluid> molten : AdventTiCFluids.MOLTEN)
-            tag(TinkerTags.Fluids.AVERAGE_METAL_SPILLING).addTag(molten.getForgeTag());
+        average(AdventTiCFluids.MOLTEN_BARONYTE);
+        average(AdventTiCFluids.MOLTEN_BLAZIUM);
+        average(AdventTiCFluids.MOLTEN_EMBERSTONE);
+        average(AdventTiCFluids.MOLTEN_LYON);
+        average(AdventTiCFluids.MOLTEN_MYSTITE);
+        average(AdventTiCFluids.MOLTEN_SKELETAL);
+        average(AdventTiCFluids.MOLTEN_VARSIUM);
+
+        expensive(AdventTiCFluids.MOLTEN_ELECANIUM);
+        expensive(AdventTiCFluids.MOLTEN_GHASTLY);
+        expensive(AdventTiCFluids.MOLTEN_GHOULISH);
+        expensive(AdventTiCFluids.MOLTEN_LUNAR);
+        expensive(AdventTiCFluids.MOLTEN_SHYRESTONE);
+    }
+    
+    private void cheap(FluidObject<ForgeFlowingFluid> fluid)
+    {
+        fluid(fluid);
+        tag(TinkerTags.Fluids.CHEAP_METAL_SPILLING).addTag(fluid.getForgeTag());
+    }
+    
+    private void average(FluidObject<ForgeFlowingFluid> fluid)
+    {
+        fluid(fluid);
+        tag(TinkerTags.Fluids.AVERAGE_METAL_SPILLING).addTag(fluid.getForgeTag());
+    }
+    
+    private void expensive(FluidObject<ForgeFlowingFluid> fluid)
+    {
+        fluid(fluid);
+        tag(TinkerTags.Fluids.EXPENSIVE_METAL_SPILLING).addTag(fluid.getForgeTag());
+    }
+    
+    private void fluid(FluidObject<ForgeFlowingFluid> fluid)
+    {
+        tag(fluid.getLocalTag()).add(fluid.getStill(), fluid.getFlowing());
+        tag(fluid.getForgeTag()).addTag(fluid.getLocalTag());
+        tag(TinkerTags.Fluids.METAL_LIKE).addTag(fluid.getForgeTag());
     }
 }

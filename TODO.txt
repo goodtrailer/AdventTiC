@@ -7,7 +7,7 @@ to-do, currently implementable
 new features:
 - balancing
 - armor modifiers
-- fluid spilling types
+- fluid spilling effects
 
 
 waiting, currently not implementable

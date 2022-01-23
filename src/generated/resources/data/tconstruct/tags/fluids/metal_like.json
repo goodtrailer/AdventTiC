@@ -1,20 +1,20 @@
 {
   "replace": false,
   "values": [
+    "#forge:molten_limonite",
+    "#forge:molten_rosite",
+    "#forge:molten_charger",
     "#forge:molten_baronyte",
     "#forge:molten_blazium",
-    "#forge:molten_charger",
-    "#forge:molten_elecanium",
     "#forge:molten_emberstone",
-    "#forge:molten_ghastly",
-    "#forge:molten_ghoulish",
-    "#forge:molten_limonite",
-    "#forge:molten_lunar",
     "#forge:molten_lyon",
     "#forge:molten_mystite",
-    "#forge:molten_rosite",
-    "#forge:molten_shyrestone",
     "#forge:molten_skeletal",
-    "#forge:molten_varsium"
+    "#forge:molten_varsium",
+    "#forge:molten_elecanium",
+    "#forge:molten_ghastly",
+    "#forge:molten_ghoulish",
+    "#forge:molten_lunar",
+    "#forge:molten_shyrestone"
   ]
 }
