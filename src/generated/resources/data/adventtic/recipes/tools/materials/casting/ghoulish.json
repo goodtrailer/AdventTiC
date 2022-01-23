@@ -4,6 +4,6 @@
     "tag": "forge:molten_ghoulish",
     "amount": 144
   },
-  "temperature": 80,
+  "temperature": 380,
   "output": "adventtic:ghoulish"
 }

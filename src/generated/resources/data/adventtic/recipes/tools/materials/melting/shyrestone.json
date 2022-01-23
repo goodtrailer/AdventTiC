@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:material_melting",
   "input": "adventtic:shyrestone",
-  "temperature": 60,
+  "temperature": 360,
   "result": {
     "fluid": "adventtic:molten_shyrestone",
     "amount": 144

@@ -8,8 +8,7 @@ new features:
 - balancing
 - new modifiers
 - armor modifiers
-- metal spilling types
-- redo fluid temps
+- fluid spilling types
 
 maintenance:
 - lang base class

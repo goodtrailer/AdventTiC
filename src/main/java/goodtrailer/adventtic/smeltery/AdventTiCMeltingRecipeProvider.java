@@ -27,7 +27,6 @@ import slimeknights.tconstruct.common.data.BaseRecipeProvider;
 import slimeknights.tconstruct.library.data.recipe.ISmelteryRecipeHelper;
 import slimeknights.tconstruct.library.recipe.FluidValues;
 import slimeknights.tconstruct.library.recipe.entitymelting.EntityMeltingRecipeBuilder;
-import slimeknights.tconstruct.library.recipe.melting.IMeltingRecipe;
 import slimeknights.tconstruct.library.recipe.melting.MeltingRecipeBuilder;
 
 public class AdventTiCMeltingRecipeProvider extends BaseRecipeProvider
@@ -97,9 +96,9 @@ public class AdventTiCMeltingRecipeProvider extends BaseRecipeProvider
                 AoAItems.CANNONBALL);
         items(con, AdventTiCFluids.MOLTEN_SKELETAL, "bow", 3 * FluidValues.INGOT,
                 AoAWeapons.SKELETAL_BOW);
-        items(con, AdventTiCFluids.MOLTEN_CHARGER, "raw_shank", 17, 38,
+        items(con, AdventTiCFluids.MOLTEN_CHARGER, "raw_shank", 17,
                 AdventTiCByproducts.SHYRESTONE_LESS, AoAItems.RAW_CHARGER_SHANK);
-        items(con, AdventTiCFluids.MOLTEN_CHARGER, "cooked_shank", 20, 40,
+        items(con, AdventTiCFluids.MOLTEN_CHARGER, "cooked_shank", 20,
                 AdventTiCByproducts.SHYRESTONE, AoAItems.COOKED_CHARGER_SHANK);
 
         entities(con, AdventTiCFluids.MOLTEN_CHARGER, "charger", 6, 2, AoAEntities.Mobs.CHARGER,
@@ -137,13 +136,13 @@ public class AdventTiCMeltingRecipeProvider extends BaseRecipeProvider
             Consumer<IFinishedRecipe> con, FluidObject<ForgeFlowingFluid> molten, String name,
             int amount, RegistryObject<T> item, RegistryObject<T>... items)
     {
-        items(con, molten, name, amount, null, null, item, items);
+        items(con, molten, name, amount, null, item, items);
     }
 
     @SafeVarargs
     private final <T extends IForgeRegistryEntry<? super T> & IItemProvider> void items(
             Consumer<IFinishedRecipe> con, FluidObject<ForgeFlowingFluid> molten, String name,
-            int amount, Integer temperature, AdventTiCByproducts.Byproduct byproduct,
+            int amount, AdventTiCByproducts.Byproduct byproduct,
             RegistryObject<T> item, RegistryObject<T>... items)
     {
         String mat = molten.getId().getPath().substring(AdventTiCFluids.MOLTEN_PREFIX.length());
@@ -154,12 +153,8 @@ public class AdventTiCMeltingRecipeProvider extends BaseRecipeProvider
         for (int i = 0; i < items.length; i++)
             itemProviders[i + 1] = items[i].get();
 
-        MeltingRecipeBuilder builder;
-        if (temperature != null)
-            builder = MeltingRecipeBuilder.melting(Ingredient.of(itemProviders), output,
-                    temperature, IMeltingRecipe.calcTimeForAmount(temperature, amount));
-        else
-            builder = MeltingRecipeBuilder.melting(Ingredient.of(itemProviders), output, amount);
+        MeltingRecipeBuilder builder = MeltingRecipeBuilder.melting(Ingredient.of(itemProviders),
+                output, amount);
 
         if (byproduct != null)
             builder.addByproduct(new FluidStack(byproduct.getFluid(), byproduct.getNuggets()));

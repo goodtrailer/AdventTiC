@@ -16,6 +16,6 @@
     "fluid": "adventtic:molten_limonite",
     "amount": 48
   },
-  "temperature": 50,
-  "time": 21
+  "temperature": 350,
+  "time": 29
 }

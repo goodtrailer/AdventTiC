@@ -7,8 +7,8 @@
     "fluid": "adventtic:molten_charger",
     "amount": 20
   },
-  "temperature": 40,
-  "time": 11,
+  "temperature": 150,
+  "time": 713,
   "byproducts": [
     {
       "fluid": "adventtic:molten_shyrestone",

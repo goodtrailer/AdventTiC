@@ -4,6 +4,6 @@
     "tag": "forge:molten_shyrestone",
     "amount": 144
   },
-  "temperature": 60,
+  "temperature": 360,
   "output": "adventtic:shyrestone"
 }

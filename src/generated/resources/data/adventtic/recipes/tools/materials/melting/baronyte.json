@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:material_melting",
   "input": "adventtic:baronyte",
-  "temperature": 280,
+  "temperature": 580,
   "result": {
     "fluid": "adventtic:molten_baronyte",
     "amount": 144

@@ -4,6 +4,6 @@
     "tag": "forge:molten_limonite",
     "amount": 144
   },
-  "temperature": 50,
+  "temperature": 350,
   "output": "adventtic:limonite"
 }

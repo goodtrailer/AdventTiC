@@ -16,8 +16,8 @@
     "fluid": "adventtic:molten_limonite",
     "amount": 144
   },
-  "temperature": 50,
-  "time": 46,
+  "temperature": 350,
+  "time": 66,
   "byproducts": [
     {
       "fluid": "adventtic:molten_rosite",

@@ -16,6 +16,6 @@
     "fluid": "adventtic:molten_rosite",
     "amount": 16
   },
-  "temperature": 100,
-  "time": 11
+  "temperature": 400,
+  "time": 15
 }

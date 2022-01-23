@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:material_melting",
   "input": "adventtic:skeletal",
-  "temperature": 60,
+  "temperature": 360,
   "result": {
     "fluid": "adventtic:molten_skeletal",
     "amount": 144

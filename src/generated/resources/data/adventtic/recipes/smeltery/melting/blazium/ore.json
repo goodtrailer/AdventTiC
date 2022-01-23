@@ -16,8 +16,8 @@
     "fluid": "adventtic:molten_blazium",
     "amount": 144
   },
-  "temperature": 480,
-  "time": 74,
+  "temperature": 780,
+  "time": 89,
   "byproducts": [
     {
       "fluid": "adventtic:molten_baronyte",

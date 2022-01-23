@@ -16,6 +16,6 @@
     "fluid": "adventtic:molten_shyrestone",
     "amount": 48
   },
-  "temperature": 60,
-  "time": 21
+  "temperature": 360,
+  "time": 30
 }

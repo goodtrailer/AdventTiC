@@ -16,8 +16,8 @@
     "fluid": "adventtic:molten_varsium",
     "amount": 144
   },
-  "temperature": 150,
-  "time": 53,
+  "temperature": 450,
+  "time": 72,
   "byproducts": [
     {
       "fluid": "adventtic:molten_baronyte",

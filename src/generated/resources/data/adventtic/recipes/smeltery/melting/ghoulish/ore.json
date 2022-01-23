@@ -16,8 +16,8 @@
     "fluid": "adventtic:molten_ghoulish",
     "amount": 144
   },
-  "temperature": 80,
-  "time": 48,
+  "temperature": 380,
+  "time": 68,
   "byproducts": [
     {
       "fluid": "adventtic:molten_ghastly",

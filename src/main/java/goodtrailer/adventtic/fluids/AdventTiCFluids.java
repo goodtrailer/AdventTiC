@@ -23,35 +23,35 @@ public final class AdventTiCFluids
     public static final String MOLTEN_PREFIX = "molten_";
 
     public static final FluidObject<ForgeFlowingFluid> MOLTEN_BARONYTE = molten(
-            AdventTiCMaterials.BARONYTE, 580);
+            AdventTiCMaterials.BARONYTE, 880);
     public static final FluidObject<ForgeFlowingFluid> MOLTEN_BLAZIUM = molten(
-            AdventTiCMaterials.BLAZIUM, 780);
+            AdventTiCMaterials.BLAZIUM, 1080);
     public static final FluidObject<ForgeFlowingFluid> MOLTEN_CHARGER = molten(
-            AdventTiCMaterials.CHARGER, 150);
+            AdventTiCMaterials.CHARGER, 450);
     public static final FluidObject<ForgeFlowingFluid> MOLTEN_ELECANIUM = molten(
-            AdventTiCMaterials.ELECANIUM, 670);
+            AdventTiCMaterials.ELECANIUM, 970);
     public static final FluidObject<ForgeFlowingFluid> MOLTEN_EMBERSTONE = molten(
-            AdventTiCMaterials.EMBERSTONE, 800);
+            AdventTiCMaterials.EMBERSTONE, 1100);
     public static final FluidObject<ForgeFlowingFluid> MOLTEN_GHASTLY = molten(
-            AdventTiCMaterials.GHASTLY, 390);
+            AdventTiCMaterials.GHASTLY, 690);
     public static final FluidObject<ForgeFlowingFluid> MOLTEN_GHOULISH = molten(
-            AdventTiCMaterials.GHOULISH, 380);
+            AdventTiCMaterials.GHOULISH, 680);
     public static final FluidObject<ForgeFlowingFluid> MOLTEN_LIMONITE = molten(
-            AdventTiCMaterials.LIMONITE, 350);
+            AdventTiCMaterials.LIMONITE, 650);
     public static final FluidObject<ForgeFlowingFluid> MOLTEN_LUNAR = molten(
-            AdventTiCMaterials.LUNAR, 505);
+            AdventTiCMaterials.LUNAR, 805);
     public static final FluidObject<ForgeFlowingFluid> MOLTEN_LYON = molten(
-            AdventTiCMaterials.LYON, 520);
+            AdventTiCMaterials.LYON, 820);
     public static final FluidObject<ForgeFlowingFluid> MOLTEN_MYSTITE = molten(
-            AdventTiCMaterials.MYSTITE, 430);
+            AdventTiCMaterials.MYSTITE, 730);
     public static final FluidObject<ForgeFlowingFluid> MOLTEN_ROSITE = molten(
-            AdventTiCMaterials.ROSITE, 400);
+            AdventTiCMaterials.ROSITE, 700);
     public static final FluidObject<ForgeFlowingFluid> MOLTEN_SHYRESTONE = molten(
-            AdventTiCMaterials.SHYRESTONE, 360);
+            AdventTiCMaterials.SHYRESTONE, 660);
     public static final FluidObject<ForgeFlowingFluid> MOLTEN_SKELETAL = molten(
-            AdventTiCMaterials.SKELETAL, 360);
+            AdventTiCMaterials.SKELETAL, 660);
     public static final FluidObject<ForgeFlowingFluid> MOLTEN_VARSIUM = molten(
-            AdventTiCMaterials.VARSIUM, 450);
+            AdventTiCMaterials.VARSIUM, 750);
 
     private static final <T extends Fluid> FluidObject<ForgeFlowingFluid> molten(
             MaterialId material,
